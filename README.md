@@ -1,6 +1,8 @@
 # A Quiz app made with Django ❤️
 
 **Demo: To be hosted on production**
+
+
 ***Technologies Used:***
 
     Django
