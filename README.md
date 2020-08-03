@@ -12,7 +12,7 @@
 
 ***To Be Used Technology:***
 
-    Redis for Caching
+    Redis for Caching,Leaderboard,Views
     Celery for Asynchronous Task e.g. emailing result
 
 ***Installing:***
