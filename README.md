@@ -13,6 +13,7 @@
     Bootstrap
 
 ***TO DO:***
+
     Ugrading frontend.
     Amazon S3 for static files.
     Redis for Caching,Leaderboard,Views
