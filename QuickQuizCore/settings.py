@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+
+    'whitenoise.runserver_nostatic',
+
     'django.contrib.staticfiles',
 
     #Our Custom apps
@@ -54,6 +57,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -158,3 +162,8 @@ MESSAGE_TAGS = {
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_URL           = '/login/'
 AUTH_USER_MODEL = 'my_auth.User'
+
+
+#WhiteNoise 
+#TODO: Later use AWS s3
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
