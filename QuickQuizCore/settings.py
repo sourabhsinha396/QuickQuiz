@@ -166,4 +166,4 @@ AUTH_USER_MODEL = 'my_auth.User'
 
 #WhiteNoise 
 #TODO: Later use AWS s3
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
