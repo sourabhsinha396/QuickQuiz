@@ -145,7 +145,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media_root')
 
 
 
-# Messages Framework 
+# Messages Framework tags
 MESSAGE_TAGS = {
      messages.DEBUG: 'alert-secondary',
      messages.INFO: 'alert-info',
