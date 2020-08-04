@@ -9,13 +9,17 @@
     Django-Rest-Framework
     Javascript
     Jquery
-    AWS S3 for Production
+    WhiteNoise for Static files
     Bootstrap
 
-***To Be Used Technology:***
-
+***TO DO:***
+    Ugrading frontend.
+    Amazon S3 for static files.
     Redis for Caching,Leaderboard,Views
-    Celery for Asynchronous Task e.g. emailing result
+    Celery for Asynchronous Task e.g. emailing result.
+    Seperate Production and Development settings.
+    using select_related() method to improve some queries.
+    Making things API Based instead of using core django.
 
 ***Installing:***
 
@@ -27,6 +31,5 @@
     python manage.py makemigrations
     python manage.py migrate
     python manage.py createsuperuser
-    Make sure the ecom_core > settings > base.py has development setting imported
     open the development server at port 127.0.0.1:8000
 
