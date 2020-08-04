@@ -1,6 +1,6 @@
 # A Quiz app made with Django ❤️
 
-**Demo: https://quiznquiz.herokuapp.com/ **
+## Demo: https://quiznquiz.herokuapp.com/ 
 
 
 ***Technologies Used:***
