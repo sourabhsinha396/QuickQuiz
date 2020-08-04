@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import (Quiz,Question,Answer,
 					QuizAnalysis,StoredStudentAnswer)
+from .models import Quiz,Question
 
 class QuizAdmin(admin.ModelAdmin):
 	"""This helps to customize the admin site for quiz model"""
@@ -11,6 +12,7 @@ class QuizAdmin(admin.ModelAdmin):
 	raw_id_fields= ['user']
 	search_fields = ['title']
 
+	
 admin.site.register(Quiz,QuizAdmin)
 
 

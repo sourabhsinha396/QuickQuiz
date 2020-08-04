@@ -28,6 +28,9 @@ SECRET_KEY = ')&cx#(k)qq^0z1+rb#(v@cmxv-yn3ye7e_tais(^f_!u^4t4m3'
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','quiznquiz.herokuapp.com']
+DEBUG = True
+
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -150,6 +153,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media_root')
 
 
 # Messages Framework tags
+
+# Messages Framework
 MESSAGE_TAGS = {
      messages.DEBUG: 'alert-secondary',
      messages.INFO: 'alert-info',
@@ -167,3 +172,5 @@ AUTH_USER_MODEL = 'my_auth.User'
 #WhiteNoise 
 #TODO: Later use AWS s3
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
+AUTH_USER_MODEL = 'my_auth.User'

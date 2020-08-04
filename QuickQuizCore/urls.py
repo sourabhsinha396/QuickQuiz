@@ -7,14 +7,17 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('common_pages.urls')),
+
     path('',include('quiz_app.urls')),
     path('',include('my_auth.urls')),
     path('',include('user_related.urls')),
 
     #third party
     path('api-auth/', include('rest_framework.urls')),
-]
 
+    path('',include('my_auth.urls')),
+
+]
 
 
 if settings.DEBUG:

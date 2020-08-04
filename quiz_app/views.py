@@ -135,3 +135,4 @@ def submit(request,slug):
 	return render(request,'quiz_app/score.html',context)
 
 
+

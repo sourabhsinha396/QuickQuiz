@@ -43,8 +43,10 @@ class Quiz(models.Model):
 	def __str__(self):
 		return str(self.title)[:20]
 
+
 	def get_absolute_url(self):
 		return "/{slug}/1/".format(slug=self.slug)
+
 
 
 #########--------------Question Model--------------###############
@@ -114,3 +116,5 @@ class StoredStudentAnswer(models.Model):
 
 	def __str__(self):
 		return str(self.user.email) + "answered" + str(self.student_answered)[:20]
+
+
